@@ -2,12 +2,25 @@ from decimal import Decimal, InvalidOperation
 from calculator import Calculator
 from dotenv import load_dotenv
 import os
-
+import logging
 # Load environment variables from .env file
 load_dotenv()
 
 ENVIRONMENT = os.getenv("ENVIRONMENT", "production")  # Default to 'production' if not set
 print(f"Running in {ENVIRONMENT} mode")
+
+# Configure logging
+logging.basicConfig(
+    filename="app.log",  # Log file name
+    level=logging.INFO,   # Logging level
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+# Example usage
+logging.info("Application has started")
+logging.warning("This is a warning message")
+logging.error("This is an error message")
+
 
 def calculate_and_print(a, b, operation_name):
     try:
