@@ -11,9 +11,13 @@ print(f"Running in {ENVIRONMENT} mode")
 
 # Configure logging
 logging.basicConfig(
-    filename="app.log",  # Log file name
+    #filename="app.log",  # Log file name
     level=logging.INFO,   # Logging level
-    format="%(asctime)s - %(levelname)s - %(message)s"
+    format="%(asctime)s - %(levelname)s - %(message)s",
+     handlers=[
+        logging.StreamHandler(),  # Output to console
+        logging.FileHandler("app.log")  # Output to file
+    ]
 )
 
 # Example usage
@@ -28,13 +32,13 @@ def calculate_and_print(a, b, operation_name):
         calculator = Calculator()
         if operation_name in calculator.commands:
             result = calculator.commands[operation_name].execute(a_decimal, b_decimal)
-            print(f"The result of {a} {operation_name} {b} is equal to {result}")
+            logging.info(f"The result of {a} {operation_name} {b} is equal to {result}")
         else:
             raise ValueError(f"Unknown operation: {operation_name}")
     except InvalidOperation:
-        print(f"Invalid number input: {a} or {b} is not a valid number.")
+        logging.error(f"Invalid number input: {a} or {b} is not a valid number.")
     except ValueError as e:
-        print(e)
+        logging.error(e)
 
 def main():
     import sys

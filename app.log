@@ -35,3 +35,26 @@
 2025-03-03 19:42:23,756 - INFO - The result of 5 add 3 is equal to 8
 2025-03-03 19:45:35,278 - INFO - The result of 5 subtract 3 is equal to 2
 2025-03-03 19:47:54,551 - INFO - The result of 5 subtract 3 is equal to 2
+2025-03-05 10:22:48,788 - INFO - Application has started
+2025-03-05 10:22:48,790 - WARNING - This is a warning message
+2025-03-05 10:22:48,790 - ERROR - This is an error message
+2025-03-05 10:27:34,202 - INFO - Application has started
+2025-03-05 10:27:34,202 - WARNING - This is a warning message
+2025-03-05 10:27:34,202 - ERROR - This is an error message
+2025-03-05 10:27:34,203 - INFO - The result of 5 power 3 is equal to 125
+2025-03-05 10:27:55,913 - INFO - Application has started
+2025-03-05 10:27:55,913 - WARNING - This is a warning message
+2025-03-05 10:27:55,913 - ERROR - This is an error message
+2025-03-05 10:31:57,022 - INFO - Application has started
+2025-03-05 10:31:57,023 - WARNING - This is a warning message
+2025-03-05 10:31:57,023 - ERROR - This is an error message
+2025-03-05 10:35:40,952 - INFO - Application has started
+2025-03-05 10:35:40,952 - WARNING - This is a warning message
+2025-03-05 10:35:40,952 - ERROR - This is an error message
+2025-03-05 10:39:03,288 - INFO - Application has started
+2025-03-05 10:39:03,289 - WARNING - This is a warning message
+2025-03-05 10:39:03,290 - ERROR - This is an error message
+2025-03-05 10:39:28,902 - INFO - Application has started
+2025-03-05 10:39:28,903 - WARNING - This is a warning message
+2025-03-05 10:39:28,903 - ERROR - This is an error message
+2025-03-05 10:39:28,905 - INFO - The result of 6 add 8 is equal to 14
